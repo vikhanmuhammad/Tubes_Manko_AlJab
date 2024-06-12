@@ -17,7 +17,7 @@ public class AppTest
      */
     @Test
     public void testSuccessfulLogin() {
-        UserData user = new UserData(2345, 8766);
+        UserData user = new UserData(1234, 8766);
         try {
             user.login();
             assertTrue(user.isloggedin);
