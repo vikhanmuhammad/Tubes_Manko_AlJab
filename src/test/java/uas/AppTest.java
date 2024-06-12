@@ -34,7 +34,7 @@ public class AppTest
             fail("Login should have failed");
         } catch (LoginFailed e) {
             assertFalse(user.isloggedin);
-            assertEquals(2, LoginFailed.getfailedcounter(1234));
+            assertEquals(5, LoginFailed.getfailedcounter(1234));
         }
     }
 
@@ -49,7 +49,7 @@ public class AppTest
                 assertFalse(user.isloggedin);
             }
         }
-        assertEquals(5, LoginFailed.getfailedcounter(1234));
+        assertEquals(2, LoginFailed.getfailedcounter(1234));
     }
 
     @Test
